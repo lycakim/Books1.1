@@ -1,0 +1,226 @@
+.headingStyle {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.formStyle {
+  background-color: #0005;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  display: flex;
+
+  text-align: center;
+  height: auto;
+}
+
+.formFieldDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  gap: 20px;
+  width: 500px;
+}
+
+.formGroupDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px 0 0;
+}
+
+.inputField {
+  border-radius: 20px;
+  padding: 12px;
+  border: none;
+}
+
+.label {
+  margin-left: 15px;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.btnSubmit {
+  background-color: green;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.btnSubmit:hover {
+  background-color: rgb(9, 160, 9);
+}
+
+.inputField:focus {
+  outline-width: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.contentDiv {
+  margin: 50px 0 0 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0 35px 0;
+}
+
+.container {
+  background-color: #e4e4e4;
+  min-height: 100vh;
+  display: flex;
+  /* color: white; */
+}
+
+.logoutBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 18%;
+  margin-left: 20px;
+}
+
+.dashboardContent {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recentBookUpload {
+  background-color: white;
+  width: 100vh;
+  height: 100%;
+  padding: 3.5rem 1.2rem 3.5rem 1.25rem;
+  border-radius: 10px;
+}
+
+.recentSharedBook {
+  width: 100%;
+  background-color: white;
+}
+
+.headerDiv {
+  margin-bottom: 50px;
+}
+
+.logoutBtn:hover {
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+
+.sidebar {
+  margin: -10px 0 0 0;
+  padding: 0;
+  width: 250px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 110%;
+  overflow: auto;
+}
+
+#desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  text-align: left;
+  padding-left: 18%;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.content {
+  background-color: #e4e4e4;
+  max-height: 100%;
+  display: flex;
+  margin-left: 250px;
+  padding-right: 20px;
+  /* margin-right: 50%; */
+  padding: 5px 16px;
+  position: fixed;
+  height: 110%;
+  margin-bottom: 10%;
+  width: 100%;
+  overflow: auto;
+  /* background-color: rgb(226, 226, 226); */
+}
+
+.content2 {
+  /* min-height: 100%; */
+  margin-left: 15px;
+  margin-bottom: 3%;
+  width: 81%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
